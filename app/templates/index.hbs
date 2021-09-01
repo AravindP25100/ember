@@ -1,0 +1,19 @@
+<ul style="width:500px">
+    {{#each model  as  |post|}}      
+      <div style="display:flex;align-items:center">
+          <li>
+              {{#link-to "post" post.id}}
+                {{post.title}}
+              {{/link-to}}
+          </li>
+          <button onclick={{action "deletePost" post}} type="button" style="margin-left:10px">
+            Delete
+          </button>
+          <div style="margin-left: 10px;">
+            {{#link-to "update" post.id}}
+                Edit
+            {{/link-to}}
+          </div>
+      </div>
+    {{/each}}
+</ul>
