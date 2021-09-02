@@ -8,4 +8,10 @@ export default Factory.extend({
   body() {
     return faker.lorem.paragraph();
   },
+  name() {
+    return faker.name.firstName();
+  },
+  phoneNumber() {
+    return faker.phone.phoneNumberFormat();
+  },
 });

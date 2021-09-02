@@ -5,5 +5,7 @@ export default Route.extend({
         this._super(controller, model);
         controller.set('title', '');
         controller.set('body', '');
+        controller.set('name', '');
+        controller.set('phoneNumber', '');
     }
 });
